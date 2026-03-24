@@ -5,7 +5,7 @@ function Fresnel() {
         <div className="h-screen w-screen">
             <div className ='text-justify'>
                  <Lit
-                    category='Fresnel 4'
+                    category='Fresnel'
                     pic='https://www.bhphotovideo.com/images/fb/Strand_Lighting_10SF2020G38_Arena_Theatre_8_Fresnel_671513.jpg'
                     brand='Brand'
                     uses = 'Uses'
