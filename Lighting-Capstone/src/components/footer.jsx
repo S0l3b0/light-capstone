@@ -1,7 +1,7 @@
-function Footer({icon, user}){
-    return(
-        <div className = 'w-full h-25 bg-black'>
-            
+function Footer({ icon, user }) {
+    return (
+        <div className='w-full h-25 bg-black'>
+
         </div>
     );
 
