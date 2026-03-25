@@ -80,3 +80,11 @@ button:focus-visible {
 .circle > div {
   text-align: center;
 }
+
+.grid {
+  background-image: url(/photos/grid_ckg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
