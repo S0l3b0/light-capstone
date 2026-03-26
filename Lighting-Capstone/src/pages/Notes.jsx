@@ -19,7 +19,7 @@ function Notes() {
                     date="Date"
                 />
 
-                {/*Fake button for now*/}
+                {/*Placeholder button for now*/}
                 <span className="h-20 w-20 mt-25 ml-15 text-xl ">
                     <button>+</button>
                 </span>
