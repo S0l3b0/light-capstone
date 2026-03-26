@@ -1,9 +1,19 @@
 function Lit({ category, pic, brand, uses, lenses }) {
     return (
         <div className='text-indigo-900'>
-            <img src={pic} alt="img of light not loading" width="100" />
-            <h1>{category}</h1>
-            <h2>There are many types of {category}. The one pictured above is a {brand}. It can be used for {uses}. {lenses}.</h2>
+            <h1 className = "m-10 text-bold border border-dashed border-4 w-80 text-center">{category}</h1>
+            
+            <img src={pic} className = "m-10" alt="img of light not loading" width="250" />
+
+            <ul className = "ml-10 text-xl">
+                <li>☆ There are many types of {category}.</li>
+                <br/>
+                <li>☆ The one pictured is a {brand}.</li>
+                <br/>
+                <li>☆ It can be used for: {uses}</li>
+                <br/>
+                <li>☆ {lenses}.</li>
+            </ul>
         </div>
 
     );

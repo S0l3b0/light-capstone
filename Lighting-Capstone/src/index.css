@@ -81,7 +81,7 @@ button:focus-visible {
   text-align: center;
 }
 
-.grid {
+.gridbg {
   background-image: url(/photos/grid_ckg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
