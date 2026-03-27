@@ -1,7 +1,7 @@
 function EditButton(){
     return(
         <div className ="m-3">
-        <a href="#"><button>Edit</button></a>
+        <a href="/src/pages/Inventory.jsx"><button>Edit</button></a>
     </div>
  );
 };
