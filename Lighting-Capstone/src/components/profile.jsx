@@ -1,10 +1,10 @@
-function Profile({pic,name, job, blurb}) {
-    return (
-      <div class ="circle">
-        <img src={pic} alt="profilepic"/>
-        <h3>{name}, {job}</h3>
-        <p>{blurb}</p>
-      </div>
-    );
+function Profile({ pic, name, job, blurb }) {
+  return (
+    <div class="circle">
+      <img src={pic} alt="profilepic" width="75"/>
+      <h3>{name}, {job}</h3>
+      <p>{blurb}</p>
+    </div>
+  );
 };
 export default Profile;
