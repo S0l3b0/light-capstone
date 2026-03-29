@@ -4,13 +4,23 @@ function Archive() {
         <div className="h-screen w-screen">
             <h1>Archive Page</h1>
             <div className="flex flex-row gap-4 p-4">
-            <ArchivePost 
-                show="Arsenic and Old Lace"
-                image=""
-                name="Sophie"
-                date="2/1/2026"
-            />
+                <ArchivePost 
+                    show="Arsenic and Old Lace"
+                    image=""
+                    name="Sophie"
+                    date="2/1/2026"
+                />
+
+                <ArchivePost 
+                    show="Show"
+                    image=""
+                    name="Name"
+                    date="Date"
+                />
             </div>
+            <span className="flex mt-25 ml-100 text-xl">
+                    <button className="w-25 h-25">+</button>
+            </span>
         </div>
     );
 }
