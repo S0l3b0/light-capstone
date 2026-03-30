@@ -6,7 +6,7 @@ function flag() {
     <button
       className="flex items-center gap-2  px-4 py-2 rounded-full transition-all duration-200"
     >
-      <img src="./src/photos/emptyFlag.png"/>
+      <img src="./public/photos/emptyFlag.png"/>
     </button>
   );
 }

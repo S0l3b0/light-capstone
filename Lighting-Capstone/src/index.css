@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #151313;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -79,4 +79,35 @@ button:focus-visible {
 
 .circle > div {
   text-align: center;
+}
+
+.gridbg {
+  background-image: url(/photos/grid_ckg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.s4{
+  background:#363ed4;
+  width: 50px;
+  height: 100px;
+  text-align: center;
+}
+.fresnel{
+  background:#d8ff64;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  color: #151313;
+ 
+}
+.par{
+  background:#6b90b0;
+  border-radius:100%;
+  width: 50px;
+  height: 50px;
+  display:flex;
+  justify-content: center;
 }

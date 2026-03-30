@@ -15,17 +15,20 @@ function Home() {
       </div>
       <div className='flex space-x-50 text-center justify-center'>
         <Profile
+          pic ='/photos/vigo.jpeg'
           name='Lily'
           job='webdesign'
           blurb='i am lily. fear me.'>
         </Profile>
 
         <Profile
+          pic = '/photos/hermie.JPEG'
           name='Sophie'
           job='master coder'
           blurb='i am sophie. i know all.'>
         </Profile>
         <Profile
+          pic ='/photos/cosmo.JPEG'
           name='Billie'
           job='ideanator'
           blurb='i am billie. i am somewhere.'>
