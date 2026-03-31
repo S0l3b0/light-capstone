@@ -3,7 +3,7 @@ import Note from "/src/components/note.jsx";
 function Notes() {
     return (
 
-        <div className="h-screen w-screen"><h1>Notes Page</h1>
+        <div className="h-screen w-screen text-indigo-50"><h1>Notes Page</h1>
             <div className="flex flex-row gap-4 p-4">
                 <Note
                     topic="Broken Cyc Lights"
@@ -20,7 +20,7 @@ function Notes() {
                 />
 
                 {/*Placeholder button for now*/}
-                <span className="h-20 w-20 mt-25 ml-15 text-xl ">
+                <span className="h-20 w-20 mt-25 ml-15 text-xl text-indigo-950">
                     <button>+</button>
                 </span>
 

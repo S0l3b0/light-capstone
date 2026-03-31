@@ -2,9 +2,9 @@ import InfoButton from "/src/components/infoButton.jsx";
 
 function Info() {
     return (
-        <div className="h-screen w-screen mb-10">
-            <h1>Info Page</h1>
-            <span className = "grid grid-flow-col grid-rows-4 gap-0">
+        <div className="min-h-screen w-screen">
+            <h1 className = "text-indigo-50">Info Page</h1>
+            <span className = "grid grid-flow-col grid-rows-4 gap-0 ml-10">
 
             <img className = "m-5" src = "https://www.fullcompass.com/common/products/original/155985.jpg" width="200"/>
             <InfoButton

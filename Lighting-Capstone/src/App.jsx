@@ -12,10 +12,12 @@ import Par from "./pages/Par.jsx";
 import IQ from "./pages/IQ.jsx";
 import LED from "./pages/LED.jsx";
 import Cyc from "./pages/Cyc.jsx";
+import Footer from "/src/components/footer.jsx";
 
 
 function App() {
   return (
+    <div className = "bg-indigo-900">
     <BrowserRouter>
       <nav class="object-top bg-indigo-950 w-screen">
         <div>
@@ -41,6 +43,9 @@ function App() {
         <Route path = "/cyc" element = {<Cyc/>} />
       </Routes>
     </BrowserRouter>
+
+    <Footer/>
+    </div>
   );
 }
 

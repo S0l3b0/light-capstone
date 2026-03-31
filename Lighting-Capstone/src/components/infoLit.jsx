@@ -1,6 +1,6 @@
 function Lit({ category, pic, brand, uses, lenses }) {
     return (
-        <div className='text-indigo-900'>
+        <div className='text-indigo-50 h-screen'>
             <h1 className = "m-10 text-bold border border-dashed border-4 w-80 text-center">{category}</h1>
             
             <img src={pic} className = "m-10" alt="img of light not loading" width="250" />

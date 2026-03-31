@@ -4,7 +4,7 @@ import Banner from "/src/components/banner.jsx";
 
 function Home() {
   return (
-    <div className='h-screen space-y-10'>
+    <div className='h-screen space-y-10 bg-indigo-900'>
       <div className="w-screen">
           <Banner
             title = "Lighting Inventory"
@@ -15,23 +15,23 @@ function Home() {
       </div>
       <div className='flex space-x-50 text-center justify-center'>
         <Profile
-          pic ='/photos/vigo.jpeg'
+          pic ='https://static.vecteezy.com/system/resources/previews/027/258/893/non_2x/paint-bucket-line-icon-isolated-on-white-background-vector.jpg'
           name='Lily'
-          job='webdesign'
-          blurb='i am lily. fear me.'>
+          job='Webdesign'
+          blurb='Lead Set Design + Construction 2025-26'>
         </Profile>
 
         <Profile
-          pic = '/photos/hermie.JPEG'
+          pic = 'https://img.freepik.com/premium-vector/microphone-icon-vector-illustration-isolated-white-background_74669-775.jpg'
           name='Sophie'
-          job='master coder'
-          blurb='i am sophie. i know all.'>
+          job='Backend'
+          blurb='Sound Op 2025-26'>
         </Profile>
         <Profile
-          pic ='/photos/cosmo.JPEG'
+          pic ='https://static.vecteezy.com/system/resources/previews/006/757/532/non_2x/light-bulb-icon-free-vector.jpg'
           name='Billie'
-          job='ideanator'
-          blurb='i am billie. i am somewhere.'>
+          job='Backend + Styling'
+          blurb='Lighting Design + Op 2025-26'>
         </Profile>
       </div>
     </div>

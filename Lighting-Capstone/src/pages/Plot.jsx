@@ -8,7 +8,7 @@ function Plot() {
     return (
     <div class='gridbg'>
     <div className="h-screen w-screen">
-      <h1>Plot Page</h1>
+      <h1 className = "text-indigo-50">Plot Page</h1>
       <span className = "grid grid-cols-3 gap-0">
         <S4/>
         <Fres/>
