@@ -1,15 +1,13 @@
-function Inventory (){
-    return(
-        <div className="h-screen w-screen">
-            <span className="grid grid-cols-3 gap-0">
+function Inventory() {
+    return (
+        <div className="h-screen w-screen p-4">
+            <div className="grid grid-cols-3 gap-4">
                 <h2>Gallery</h2>
                 <h2>MS</h2>
                 <h2>MS</h2>
-                
-            </span>
+            </div>
         </div>
-    )
-
+    );
 }
-export default Inventory;
 
+export default Inventory;

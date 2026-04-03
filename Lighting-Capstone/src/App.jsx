@@ -13,8 +13,9 @@ import IQ from "./pages/IQ.jsx";
 import LED from "./pages/LED.jsx";
 import Cyc from "./pages/Cyc.jsx";
 import Footer from "/src/components/footer.jsx";
-import { createClient } from "@supabase/supabase-js";
-const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY);
+import Inventory from "./pages/Inventory.jsx";
+// import { createClient } from "@supabase/supabase-js";
+// const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY);
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Route path = "/iq" element = {<IQ/>} />
         <Route path = "/led" element = {<LED/>} />
         <Route path = "/cyc" element = {<Cyc/>} />
+        <Route path = "/inventory" element = {<Inventory/>} />
       </Routes>
     </BrowserRouter>
 
