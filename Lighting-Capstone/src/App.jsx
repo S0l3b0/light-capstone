@@ -21,7 +21,7 @@ import Inventory from "./pages/Inventory.jsx";
 function App() {
   return (
     <div className = "bg-indigo-900">
-    <BrowserRouter basename='Lighting-Capstone'>
+    <BrowserRouter basename='home'>
       <nav class="object-top bg-indigo-950 w-screen">
         <div>
           <Link to="/home"><button className="m-5">Home</button></Link>
