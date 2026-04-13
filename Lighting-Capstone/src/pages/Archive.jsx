@@ -1,4 +1,6 @@
 import ArchivePost from "../components/archivePost";
+import { supabase } from "../../supabaseConfig.js";
+
 function Archive() {
     return (
         <div className="h-screen w-screen">
@@ -6,7 +8,7 @@ function Archive() {
             <div className="flex flex-row gap-4 p-4">
                 <ArchivePost 
                     show="Arsenic and Old Lace"
-                    image="/photos/sampleArchive.png"
+                    image="../photos/sampleArchive.png"
                     name="Sophie"
                     date="2/1/2026"
                 />
