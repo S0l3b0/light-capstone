@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 import Home from "./pages/Home.jsx";
 import Plot from "./pages/Plot.jsx";
 import Notes from "./pages/Notes.jsx";
@@ -12,43 +12,42 @@ import Par from "./pages/Par.jsx";
 import IQ from "./pages/IQ.jsx";
 import LED from "./pages/LED.jsx";
 import Cyc from "./pages/Cyc.jsx";
-import Footer from "/src/components/footer.jsx";
 import Inventory from "./pages/Inventory.jsx";
-// import { createClient } from "@supabase/supabase-js";
-// const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY);
-
+import NewArchive from "./pages/newArchive.jsx";
+import Footer from "./components/footer.jsx";
 
 function App() {
   return (
-    <div className = "bg-indigo-900">
-    <BrowserRouter >
-      <nav class="object-top bg-indigo-950 w-screen">
-        <div>
-          <Link to="/home"><button className="m-5">Home</button></Link>
-          <Link to="/plot"><button className="m-5">Plot</button></Link>
-          <Link to="/notes"><button className="m-5">Notes</button></Link>
-          <Link to="/archive"><button className="m-5">Archive</button></Link>
-           <Link to="/info"><button className="m-5">Info</button></Link>
+    <div className="bg-indigo-900 text-white min-h-screen flex flex-col">
+      <BrowserRouter>
+        <nav className="bg-indigo-950 w-screen">
+          <div className="flex flex-wrap">
+            <Link to="/home" className="m-5">Home</Link>
+            <Link to="/plot" className="m-5">Plot</Link>
+            <Link to="/notes" className="m-5">Notes</Link>
+            <Link to="/archive" className="m-5">Archive</Link>
+            <Link to="/info" className="m-5">Info</Link>
+          </div>
+        </nav>
+        <div className="flex-1">
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/plot" element={<Plot />} />
+            <Route path="/notes" element={<Notes />} />
+            <Route path="/archive" element={<Archive />} />
+            <Route path="/info" element={<Info />} />
+            <Route path="/source4" element={<Source4 />} />
+            <Route path="/fresnel" element={<Fresnel />} />
+            <Route path="/par" element={<Par />} />
+            <Route path="/iq" element={<IQ />} />
+            <Route path="/led" element={<LED />} />
+            <Route path="/cyc" element={<Cyc />} />
+            <Route path="/inventory" element={<Inventory />} />
+            <Route path="/newarchive" element={<NewArchive />} />
+          </Routes>
         </div>
-      </nav>
-
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/plot" element={<Plot />} />
-        <Route path="/notes" element={<Notes />} />
-        <Route path="/archive" element={<Archive />} />
-        <Route path = "/info" element = {<Info/>} />
-        <Route path = "/source4" element = {<Source4/>} />
-        <Route path = "/fresnel" element = {<Fresnel/>} />
-        <Route path = "/par" element = {<Par/>} />
-        <Route path = "/iq" element = {<IQ/>} />
-        <Route path = "/led" element = {<LED/>} />
-        <Route path = "/cyc" element = {<Cyc/>} />
-        <Route path = "/inventory" element = {<Inventory/>} />
-      </Routes>
-    </BrowserRouter>
-
-    <Footer/>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
