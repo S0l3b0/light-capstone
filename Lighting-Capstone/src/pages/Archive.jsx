@@ -1,34 +1,50 @@
+import { useEffect, useState } from "react";
+import { supabase } from "../supabaseClient";
 import ArchivePost from "../components/archivePost";
 import { Link } from "react-router-dom";
 
 function Archive() {
-    
-    return (
-        <div className="h-screen w-screen">
-            <h1 className="text-indigo-50">Archive Page</h1>
-            <div className="flex flex-row gap-4 p-4">
-                <ArchivePost
-                    show="Arsenic and Old Lace"
-                    image="../photos/sampleArchive.png"
-                    name="Sophie"
-                    date="2/1/2026"
-                />
+    const [archives, setArchives] = useState([]);
 
-                <ArchivePost
-                    show="Show"
-                    image=""
-                    name="Name"
-                    date="Date"
-                />
+    useEffect(() => {
+        loadArchives();
+    }, []);
+
+    const loadArchives = async () => {
+        const { data, error } = await supabase
+            .from("archive")
+            .select("*")
+            .order("date", { ascending: false })
+        if (error) {
+            console.error(error);
+        } else {
+            setArchives(data);
+        }
+    };
+
+    return (
+        <div className="min-h-screen w-full text-indigo-50 p-4">
+            <h1 className="text-2xl mb-4">Archive Page</h1>
+
+            <div className="grid grid-cols-3">
+                {archives.map((item) => (
+                    <ArchivePost
+                        key={item.id}
+                        show={item.show}
+                        image={item.image}
+                        name={item.author}
+                        date={item.date}
+                    />
+                ))}
+
+                <span className="m-auto text-xl">
+                    <Link to="/newarchive">
+                        <button className="w-25 h-25">+</button>
+                    </Link>
+                </span>
             </div>
-            <span className="flex mt-15 ml-155 text-xl">
-                <Link to="/newarchive">
-                    <button className="w-25 h-25">+</button>
-                </Link>
-            </span>
         </div>
     );
 }
 
 export default Archive;
-
