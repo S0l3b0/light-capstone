@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../supabaseClient";
+import { useNavigate } from "react-router-dom";
 
 function NewArchive() {
     const [file, setFile] = useState(null);
@@ -7,8 +8,7 @@ function NewArchive() {
     const [show, setShow] = useState("");
     const [date, setDate] = useState("");
     const [uploading, setUploading] = useState(false);
-
-    const [archives, setArchives] = useState([]);
+    const navigate = useNavigate();
 
     const handleUpload = async () => {
         if (!file) return;
@@ -52,6 +52,7 @@ function NewArchive() {
             setDate("");
 
             alert("Upload successful!");
+            navigate("/archive");
         }
 
         setUploading(false);
