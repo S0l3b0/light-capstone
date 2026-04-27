@@ -2,43 +2,25 @@ import { useState, useEffect } from "react";
 import { supabase } from "../supabaseClient";
 import { useNavigate } from "react-router-dom";
 
-function NewArchive() {
-    const [file, setFile] = useState(null);
+function NewNote() {
     const [author, setAuthor] = useState("");
-    const [show, setShow] = useState("");
+    const [topic, setTopic] = useState("");
     const [date, setDate] = useState("");
+    const [text, setText] = useState("");
     const [uploading, setUploading] = useState(false);
     const navigate = useNavigate();
 
     const handleUpload = async () => {
         if (!file) return;
 
-        setUploading(true);
 
-        const fileExt = file.name.split(".").pop();
-        const fileName = `${Date.now()}.${fileExt}`;
-
-        const { error: storageError } = await supabase.storage
-            .from("archive-images")
-            .upload(fileName, file);
-
-        if (storageError) {
-            alert(storageError.message);
-            setUploading(false);
-            return;
-        }
-
-        const { data: urlData } = supabase.storage
-            .from("archive-images")
-            .getPublicUrl(fileName);
-
-        const {error: dbError } = await supabase
-            .from("archive")
+        const { error: dbError } = await supabase
+            .from("notes")
             .insert([
                 {
-                    image: urlData.publicUrl,
+                    text,
                     author,
-                    show,
+                    topic,
                     date,
                 },
             ])
@@ -46,13 +28,13 @@ function NewArchive() {
         if (dbError) {
             alert(dbError.message);
         } else {
-            setFile(null);
+            setText("");
             setAuthor("");
-            setShow("");
+            setTopic("");
             setDate("");
 
             alert("Upload successful!");
-            navigate("/archive");
+            navigate("/notes");
         }
 
         setUploading(false);
@@ -60,9 +42,7 @@ function NewArchive() {
 
     return (
         <div className="p-6 text-white">
-            <h1 className="text-2xl mb-4">New Archive</h1>
-
-            <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+            <h1 className="text-2xl mb-4">New Note</h1>
 
             <input
                 placeholder="Author"
@@ -72,9 +52,9 @@ function NewArchive() {
             />
 
             <input
-                placeholder="Show"
-                value={show}
-                onChange={(e) => setShow(e.target.value)}
+                placeholder="Topic"
+                value={topic}
+                onChange={(e) => setTopic(e.target.value)}
                 className="block mt-2"
             />
 
@@ -84,6 +64,14 @@ function NewArchive() {
                 onChange={(e) => setDate(e.target.value)}
                 className="block mt-2"
                 type="date"
+            />
+
+            <input
+                placeholder="Text"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                className="block mt-2"
+                type="text"
             />
 
             <button
@@ -97,4 +85,4 @@ function NewArchive() {
     );
 }
 
-export default NewArchive;
+export default NewNote;

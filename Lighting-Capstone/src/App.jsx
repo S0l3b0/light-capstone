@@ -15,6 +15,7 @@ import Cyc from "./pages/Cyc.jsx";
 import Inventory from "./pages/Inventory.jsx";
 import NewArchive from "./pages/newArchive.jsx";
 import Footer from "./components/footer.jsx";
+import NewNote from "./pages/newNote.jsx";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path="/cyc" element={<Cyc />} />
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/newarchive" element={<NewArchive />} />
+            <Route path='/newnote' element={<NewNote />} />
           </Routes>
         </div>
         <Footer />
