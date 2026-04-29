@@ -8,8 +8,9 @@ function Fresnel() {
                     category='Fresnel'
                     pic='https://www.bhphotovideo.com/images/fb/Strand_Lighting_10SF2020G38_Arena_Theatre_8_Fresnel_671513.jpg'
                     brand='Brand'
-                    uses = 'Uses'
-                    lenses = 'Lenses'
+                    uses = 'Fill light or top light.'
+                    lenses = 'Fresnels have no lenses.'
+                    additional = 'Fresnels can be hard to aim or hit a specific area you want them to, so you can add blinders to focus the light.'
                     />
                 </div>
         </div>

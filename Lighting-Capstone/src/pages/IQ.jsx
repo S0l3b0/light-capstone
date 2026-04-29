@@ -5,11 +5,12 @@ function IQ() {
         <div className="h-screen w-screen">
          <div className ='text-justify'>
                 <Lit
-                    category='IQ'
+                    category ="non-incadescent and non-led."
                     pic='https://www.stagespot.com/media/catalog/product/cache/6ffac0a70afe81f6af0c781648a41a72/R/O/ROS-ICUE-ICue.jpg'
-                    brand='Brand'
-                    uses = 'Uses'
-                    lenses = 'Lenses'
+                    brand='IQ'
+                    uses = 'An I-Cue is not an actual light, but an attachment. It is used to bounce a light around the stage with a mirror.'
+                    lenses = 'There are no lenses for an I-Cue, but there are better sized lenses to use with it, those being 19s and 26s.'
+                    additional ='It attaches to the light with the gel clip.'
                     />
             </div>
         </div>

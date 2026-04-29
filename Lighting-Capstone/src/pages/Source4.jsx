@@ -7,9 +7,9 @@ function Source4() {
                   <Lit
                       category='Source 4'
                       pic='https://www.filmmakersacademy.com/wp-content/uploads/2015/08/image003.png'
-                      brand='Brand'
-                      uses = 'Uses'
-                      lenses = 'Lenses'
+                      brand='Ellipsodal'
+                      uses = 'Pin lights, face light, or specific lighting. Ellipsodials can be shuttered to different shapes and sizes.'
+                      lenses = 'Compatable with 19s, 26s, 36s, 50s, etc.'
                     />
                     </div>
         </div>

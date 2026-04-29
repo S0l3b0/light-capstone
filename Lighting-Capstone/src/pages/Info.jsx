@@ -4,6 +4,7 @@ function Info() {
     return (
         <div className="min-h-screen w-screen">
             <h1 className = "text-indigo-50">Info Page</h1>
+            <h2>☆ Important Note: Most of these lights be LEDs or Incadescents.☆</h2>
             <span className = "grid grid-flow-col grid-rows-4 gap-0 ml-10">
 
             <img className = "m-5" src = "https://www.fullcompass.com/common/products/original/155985.jpg" width="200"/>
