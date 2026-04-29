@@ -11,8 +11,6 @@ function NewNote() {
     const navigate = useNavigate();
 
     const handleUpload = async () => {
-        if (!file) return;
-
 
         const { error: dbError } = await supabase
             .from("notes")
