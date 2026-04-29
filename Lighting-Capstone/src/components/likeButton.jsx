@@ -19,8 +19,7 @@ function LikeButton({ noteId }) {
   
   const like = async () => {
     const newLikes = likes + 1;
-
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from("notes")
       .update({ likes: newLikes })
       .eq("noteID", noteId);
