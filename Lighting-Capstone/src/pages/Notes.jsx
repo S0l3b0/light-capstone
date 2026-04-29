@@ -29,7 +29,7 @@ function Notes() {
             <div className="grid grid-cols-3">
                 {notes.map((item) => (
                     <Note
-                        key={item.id}
+                        id={item.noteID}
                         topic={item.topic}
                         text={item.text}
                         name={item.author}
