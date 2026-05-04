@@ -111,3 +111,16 @@ button:focus-visible {
   display:flex;
   justify-content: center;
 }
+.content{
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  border: 1px solid #686868;
+  display: none;
+  justify-content: center;
+  border-radius: 10px;
+ }
+ .show{
+  display: flex;
+ }
+ 
