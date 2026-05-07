@@ -29,6 +29,7 @@ function App() {
             <Link to="/info" className="m-5">Info</Link>
           </div>
         </nav>
+        
         <div className="flex-1">
           <Routes>
             <Route path="/home" element={<Home />} />
