@@ -7,9 +7,9 @@ function Cyc() {
                  <Lit
                     category='Cyc'
                     pic='https://www.etcconnect.com/uploadedImages/Main_Site/Images/News/Hangzhou-Grand-Theatre-ETC-upgrade3.jpg'
-                    brand='Brand'
-                    uses = 'Uses'
-                    lenses = 'Lenses'
+                    brand='ETC/Chroma-Q'
+                    uses = 'Lighting the backdrop of scenes, but is not as advanced as something like an LED wall.'
+                    lenses = 'No lenses for cyc lights, but they can be gel-ed'
                 />
             </div>
         </div>
