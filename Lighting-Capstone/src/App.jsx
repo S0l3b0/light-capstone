@@ -12,7 +12,7 @@ import IQ from "./pages/IQ.jsx";
 import LED from "./pages/LED.jsx";
 import Cyc from "./pages/Cyc.jsx";
 import Inventory from "./pages/Inventory.jsx";
-import NewArchive from "./pages/newArchive.jsx";
+import NewArchive from "./pages/NewArchive.jsx";
 import Footer from "./components/footer.jsx";
 import NewNote from "./pages/newNote.jsx";
 
