@@ -53,7 +53,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.no-hover:hover {
+  border-color: transparent !important;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -84,9 +86,11 @@ button:focus-visible {
 .gridbg {
   background-image: url(/photos/grid_ckg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin: 0;
   padding: 0;
+  background-size: contain;
+  background-position: center;
 }
 
 .s4{
@@ -94,6 +98,7 @@ button:focus-visible {
   width: 50px;
   height: 100px;
   text-align: center;
+  display:flex;
 }
 .fresnel{
   background:#d8ff64;
@@ -101,7 +106,7 @@ button:focus-visible {
   height: 50px;
   justify-content: center;
   color: #151313;
- 
+  display:flex;
 }
 .par{
   background:#6b90b0;

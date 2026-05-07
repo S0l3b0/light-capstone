@@ -1,16 +1,12 @@
-import S4 from "/src/components/s4.jsx";
-import Pa from "/src/components/par.jsx";
-import Fres from "/src/components/fres.jsx";
-import Collapsible from "./collapsible";
-
+import Light from "./light";
 
 function Light_key() {
    return (
-       <div class='bg-cyan-950 absolute right-0 right-0 mr-2 '>
+       <div className='bg-cyan-950'>
            <h2>Key:</h2>
-           <S4 label='s4' />
-           <Pa label= 'par'/>
-           <Fres label= 'fresnel'/>
+           <Light type='s4' label='s4' />
+           <Light type='par' label= 'par'/>
+           <Light type='fresnel' label= 'fresnel'/>
        </div>
    );
 
