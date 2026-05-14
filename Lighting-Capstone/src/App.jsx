@@ -19,7 +19,7 @@ import NewNote from "./pages/newNote.jsx";
 function App() {
   return (
     <div className="bg-indigo-900 text-white min-h-screen flex flex-col">
-      <BrowserRouter basename="/lighting-capstone">
+      <BrowserRouter basename="/light-capstone">
         <nav className="bg-indigo-950 w-screen">
           <div className="flex flex-wrap">
             <Link to="/home" className="m-5">Home</Link>
