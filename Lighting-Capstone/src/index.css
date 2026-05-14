@@ -86,11 +86,9 @@ button:focus-visible {
 .gridbg {
   background-image: url(/photos/grid_ckg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
   margin: 0;
   padding: 0;
-  background-size: contain;
-  background-position: center;
+  background-size: 1750px;
 }
 
 .s4{
@@ -99,6 +97,7 @@ button:focus-visible {
   height: 100px;
   text-align: center;
   display:flex;
+  justify-content: center;
 }
 .fresnel{
   background:#d8ff64;
